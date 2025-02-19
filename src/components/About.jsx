@@ -11,7 +11,11 @@ const About = () => {
                 backgroundImage: `
             radial-gradient(circle at 10% 25%, rgba(121, 169, 247, 0.4) 100px, transparent 50px),
             radial-gradient(circle at 80% 90%, rgba(121, 169, 247, 0.5) 30px, transparent 30px),
-            radial-gradient(circle at 90% 40%, rgba(213, 222, 247, 0.5) 50px, transparent 50px)
+            radial-gradient(circle at 90% 40%, rgba(213, 222, 247, 0.5) 50px, transparent 50px),
+            radial-gradient(circle at 60% 30%, rgba(213, 23, 247, 0.5) 45px, transparent 40px),
+            radial-gradient(circle at 79% 50%, rgba(213, 23, 2, 0.5) 49px, transparent 50px),
+            radial-gradient(circle at 60% 30%, rgba(213, 23, 247, 0.5) 45px, transparent 40px),
+            radial-gradient(circle at 45% 45%, rgba(213, 222, 247, 0.5) 50px, transparent 50px)
           `,
                 paddingTop: '5rem',
             }}>
