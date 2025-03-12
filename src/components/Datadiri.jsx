@@ -78,7 +78,7 @@ const Datadiri = () => {
             });
     }, []);
     return (
-        <div className="h-[100vh] mt-0  bg-gradient-to-b from-slate-950 to-slate-500">
+        <div className="h-[100vh] mt-0  bg-black">
             <div className="container mx-auto px-4 py-16 " >
                 <h1 ref={Saya} className=" text-5xl  font-extrabold text-green-200 ">
 
@@ -103,7 +103,7 @@ const Datadiri = () => {
 
                 <h4 ref={Mana} className="text-3xl w-[45%]  pb-[0.20rem] font-medium text-white">Web Developer</h4>
                 <h5 ref={Ama} className="text-1xl w-[45%]  font-medium text-white">Menjadi Progremer Adalah Impian Saya Sejak Masih Di Bangku SMP</h5>
-                <h3 ref={hub} className="px-5 py-[10px]    text-white bg-black rounded-full inline-block">Hubungi Saya</h3>
+                <h3 ref={hub} className="px-5 py-[10px]    text-white bg-green-400 rounded-full inline-block">Hubungi Saya</h3>
 
                 <img src={gambar} ref={Gambar} className="ml-[100%] -mt-10" />
 

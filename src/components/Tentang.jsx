@@ -1,7 +1,9 @@
 import { useEffect, useRef, } from "react";
 import { TypeAnimation } from "react-type-animation";
 
+
 const Tentang = () => {
+
 
     const Saya = useRef()
     const Mana = useRef()
@@ -23,7 +25,8 @@ const Tentang = () => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
     return (
-        <div className="h-[100vh] bg-gradient-to-r mt-0  from-slate-950 to-slate-950">
+        <div className="h-[100vh] bg-gradient-to-r mt-0  from-slate-900 to-slate-900">
+
             <h1 ref={Saya} className=" text-5xl clip-path-[polygon(0%_20%,100%_0%,100%_80%,0%_100%)] px-10 font-extrabold text-green-200 ">
 
 

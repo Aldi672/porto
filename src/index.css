@@ -9,3 +9,101 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  @apply relative max-w-[1200px];
+  position: relative;
+  max-width: 1200px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  @apply absolute w-1 bg-lightDark-100 bg-opacity-25 top-0 bottom-0 -ml-1 -z-10;
+  content: " ";
+}
+
+/* Container around content */
+.wrap {
+  @apply py-[10px] px-[40px] relative bg-inherit;
+}
+
+/* The circles on the timeline */
+.wrap::after {
+  content: "";
+  @apply absolute w-[20px] h-[20px] -left-[12px] bg-primary top-[20px] rounded-[50%] z-10;
+}
+
+/* Add arrows to the right wrap (pointing left) */
+.wrap::before {
+  content: " ";
+  @apply border-8 border-t-transparent border-r-lightDark-100 border-b-transparent border-l-transparent border-opacity-25 left-[31px] z-10 w-0 h-0 top-[22px] absolute;
+  border-width: 10px 10px 10px 0;
+}
+
+/* The actual content */
+.content {
+  @apply bg-lightDark-100 transition backdrop-blur bg-opacity-25 py-5 px-7 relative rounded-md text-secondary hover:bg-lightDark-200;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+
+  /* Place the timelime to the left */
+  .timeline::after {
+    @apply left-[31px];
+  }
+
+  /* Full-width wraps */
+  .wrap {
+    @apply w-full pl-[70px] pr-[25px];
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .wrap::before {
+    @apply left-[61px];
+  }
+
+  /* Make sure all circles are at the same spot */
+  .right::after {
+    @apply left-[2px];
+  }
+}
+
+.show {
+  display: block !important;
+}
+
+.btn-active {
+  @apply bg-lightDark-200 rounded;
+}
+
+.lomba {
+  @apply hidden;
+
+}
+
+.pendidikan {
+  @apply hidden;
+}
+
+.loader {
+  position: absolute;
+  height: 100%;
+  background-color: black;
+}
+
+.text {
+  margin: 21px;
+  color: white;
+  white-space: nowrap;
+  mix-blend-mode: difference;
+}
+
+.style-1 img {
+  size: 3rem;
+}
+
+.style-2 img {
+  size: 3rem;
+}
